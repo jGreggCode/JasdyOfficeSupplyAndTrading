@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+/* ----------------- ROOT VARIABLES ----------------- */
+:root {
+    --color-primary: #89cff0;
+    --color-danger: #ff7782;
+    --color-sucess: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #147b0f;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    --text-border-radius: 1rem;
+    --text-border-radius-active: 1rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
+
+h5.text-muted {
+  color: var(--color-info-dark);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+small {
+  font-size: .7rem;
+  font-weight: 1000;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar, .footer {
+  background: rgb(175,171,171);
+  background: linear-gradient(167deg, rgba(175,171,171,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+ 
+ 
+body {
+	margin-bottom: 60px; /* Margin bottom by footer height */
+  padding-top: 54px;
+}
+
+@media screen and (min-width: 1336px) {
+  
+  .nav-link-logout {
+    margin-top: 1rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+/* Required icon */
+.requiredIcon {
+	color: red;
+}
+
+/* Suggestion list styles */
+ul.suggestionsList {
+  width: 97%;
+  background-color: #e9e9e9;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+  
+ul.suggestionsList li {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .8rem;
+}
+
+/* End Suggestion list styles */
+
+h5.profile-heading {
+  color: rgb(57, 57, 57);
+  font-weight: 500;
+}
+
+/* Changing the bootstrap table stripe colors to red */
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #ecf9ec;
+}
+
+/* Changing the background color for tab/pills */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #4d4d4d;
+    border-radius: 2rem;
+    transition: all 500ms ease;
+}
+
+/* Display the suggestions list on top of other elements */
+.customListDivWidth{
+	position: absolute;
+	z-index:500;
+	width: 100%;
+}
+
+/* .dataTables_wrapper .dt-buttons {
+  float:none;  
+  text-align:center;
+} */
+
+.nav-link, .navbar-brand {
+  color: black;
+  font-weight: 400;
+}
+
+.blueText {
+	color: #2FA4E7;
+}
+
+.alert {
+  font-weight: 500;
+}
+
+.btn {
+  background: rgba(247, 247, 247, 0.729);
+  transition: all 500ms ease;
+  border: none;
+  font-size: .9rem;
+  padding: .4rem 1rem;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+.btn-theme {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.btn-theme:hover {
+  background-color: var(--color-info-dark);
+}
+
+.btn-report {
+  background-color: var(--color-warning) !important;
+}
+
+.btn-edit-profile {
+  font-size: .8rem;
+  background-color: var(--color-primary);
+}
+
+.btn-success {
+  background: rgb(73, 220, 73);
+}
+
+.btn-primary {
+  background: rgb(121, 188, 243);
+}
+
+.btn-danger {
+  background: rgb(219, 80, 80);
+}
+
+.btn-warning {
+  background: rgb(230, 154, 60);
+}
+
+.heading-arrow {
+  color: var(--color-info-dark);
+}
+
+.form-control {
+  border-radius: var(--border-radius-2);
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgb(121, 188, 243);
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(121, 188, 243, 0.586);
+}
+
+.chosen-container-single .chosen-single {
+  background: #fff !important;
+}
+
+.card {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--card-border-radius);
+  border: none;
+  transition: all 2000ms ease;
+}
+
+.card-header:first-child {
+  background: rgb(175,171,171);
+  border-bottom: none;
+  background: linear-gradient(167deg, rgba(175,171,171,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+/* TABLE  */
+
+table.table {
+  font-family: 'Poppins';
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: none;
+}
+table.table td, table.table th {
+  border: 0px solid #AAAAAA;
+  padding: 4px 3px;
+}
+table.table tbody td {
+  font-size: .9rem;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: rgba(218, 218, 218, 0.513);
+}
+
+table.table thead {
+  background: #282828;
+  background: -moz-linear-gradient(top, #5e5e5e 0%, #3d3d3d 66%, #282828 100%);
+  background: -webkit-linear-gradient(top, #5e5e5e 0%, #3d3d3d 66%, #282828 100%);
+  background: linear-gradient(to bottom, #5e5e5e 0%, #3d3d3d 66%, #282828 100%);
+}
+table.table thead th {
+  font-size: .9rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.table thead th:first-child {
+  border-left: none;
+}
+
+table.table tfoot td {
+  font-size: 11px;
+}
+table.table tfoot .links {
+  text-align: right;
+}
+table.table tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+/* INSIGHTS */
+
+.insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.insights > div {
+  background: var(--color-white);
+  padding: var(--padding-1);
+  border-radius: var(--card-border-radius);
+  margin: 1rem;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.insights > div:hover {
+  box-shadow: none;
+}
+
+.insights > div span {
+  background: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.insights > div.expenses span {
+  background: var(--color-danger);
+}
+
+.insights > div.income span {
+  background: var(--color-sucess);
+}
+
+.insights > div .middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.insights h5 {
+  color: black;
+  margin: 1rem 0 0.6rem;
+  font: .9rem;
+}
+
+.insights .progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.insights .progress svg {
+  background-color: white;
+  width: 7rem;
+  height: 7rem;
+}
+
+.insights svg circle {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 14;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 110;
+  stroke-dashoffset: 92;
+}
+
+.insights .sales svg circle {
+  stroke-dashoffset: -30;
+  stroke-dasharray: 200;
+}
+
+.insights .expenses svg circle {
+  stroke-dashoffset: 20;
+  stroke-dasharray: 80;
+}
+
+.insights .income svg circle {
+  stroke-dashoffset: 35;
+  stroke-dasharray: 110;
+}
+
+.insights .progress .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insights small {
+  margin-top: 1.6rem;
+  display: block;
+}
+
+.chosen-container-single .chosen-single {
+  border-radius: var(--border-radius-2) !important;
+}
+
+.material-icons-sharp-user {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .nav {
+    font-size: .8rem;
+  }
+}
