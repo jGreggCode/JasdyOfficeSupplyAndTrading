@@ -7,6 +7,8 @@
 		while($row = $vendorNamesStatement->fetch(PDO::FETCH_ASSOC)) {
 			echo '<option value="' .$row['fullName'] . '">' . $row['fullName'] . '</option>';
 		}
+	} else {
+		echo '<option value="No Vendors" disabled>No vendors</option>';
 	}
 	$vendorNamesStatement->closeCursor();
 ?>

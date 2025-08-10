@@ -79,7 +79,7 @@
             // $mail->Username = 'noreply@jasdyofficesupplies.shop';
             // $mail->Password = '10kls.Smalltank';
             $mail->Username = 'jgdev101613@gmail.com';
-            $mail->Password = 'lfsd cfjn vfhr poxt';
+            $mail->Password = 'bjbl usgj ajyp krqz';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
     
@@ -181,7 +181,7 @@
             // $mail->Username = 'noreply@jasdyofficesupplies.shop';
             // $mail->Password = '10kls.Smalltank';
             $mail->Username = 'jgdev101613@gmail.com';
-            $mail->Password = 'lfsd cfjn vfhr poxt';
+            $mail->Password = 'bjbl usgj ajyp krqz';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
     
@@ -283,7 +283,7 @@
             // $mail->Username = 'noreply@jasdyofficesupplies.shop';
             // $mail->Password = '10kls.Smalltank';
             $mail->Username = 'jgdev101613@gmail.com';
-            $mail->Password = 'lfsd cfjn vfhr poxt';
+            $mail->Password = 'bjbl usgj ajyp krqz';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
     
@@ -388,8 +388,8 @@
             // $mail->Username = 'noreply@jasdyofficesupplies.shop';
             // $mail->Password = '10kls.Smalltank';
             $mail->Username = 'jgdev101613@gmail.com';
-            $mail->Password = 'lfsd cfjn vfhr poxt';
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Password = 'bjbl usgj ajyp krqz';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
     
             // Set sender and recipient
