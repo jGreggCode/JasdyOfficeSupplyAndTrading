@@ -119,7 +119,7 @@
                                         </div> -->
                                         <div class="form-group col-md-3">
                                             <label for="saleDetailsSaleDate">Order Date<span class="requiredIcon">*</span></label>
-                                            <input type="text" class="form-control datepicker" id="saleDetailsSaleDate" value="2024-11-06" name="saleDetailsSaleDate" readonly>
+                                            <input type="text" class="form-control datepicker" id="saleDetailsSaleDate" name="saleDetailsSaleDate" readonly>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label for="saleDetailsDiscount">Discount Code</label>
@@ -300,7 +300,12 @@
                                     <div id="itemSearchTab" class="container-fluid tab-pane active">
                                         <br>
                                         <p>Use the grid below to search all details of items</p>
-                                        <p style="color: red; font-weight: bold;">Warning: <?php echo $zeroStockCount; ?> <?php echo $zeroStockCount > 1 ? 'items' : 'item' ?> are out of stock</p>
+                                        <?php 
+                                            if ($zeroStockCount > 0) {
+                                                ?><p style="color: red; font-weight: bold;">Warning: <?php echo $zeroStockCount; ?> <?php echo $zeroStockCount > 1 ? 'items' : 'item' ?> are out of stock</p>
+                                                <?php
+                                            }
+                                        ?>
                                         <!-- <a href="#" class="itemDetailsHover" data-toggle="popover" id="10">wwwee</a> -->
                                         <div class="table-responsive" id="itemDetailsTableDiv"></div>
                                     </div>
